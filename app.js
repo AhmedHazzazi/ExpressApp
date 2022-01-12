@@ -10,7 +10,7 @@ app.get('/', (req, res)=>{
     res.json({message: "Hello World"});
 });
 
-app.use('/', route);
+app.use('/', router);
 app.listen(3000, ()=>{
     console.log("Express Has Started!")
 });
