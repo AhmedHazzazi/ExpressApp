@@ -6,7 +6,7 @@ const cookieParser = require("cookie-parser");
 const passport = require("passport");
 const router = require('./routes/index');
 const User = require('./models/user');
-mongoose.Promise = global.Promise
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/blogs', 
 {
     useUnifiedTopology: true,

@@ -46,13 +46,13 @@ module.exports = {
             name: req.body.name,
             age: req.body.age,
             email: req.body.email
-        })
+        });
         User.register(newUser, req.body.password, (error, user)=>{
             if(user){
-                req.json({message: "User Inserted!"});
+                res.json({message: "User Inserted!"});
             } else {
-                req.json({error: error});
+                res.json({error: error});
             }
-        })
+        });
     }
 }
